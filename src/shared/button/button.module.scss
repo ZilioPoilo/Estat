@@ -1,0 +1,32 @@
+$primary-black: #1e1f21;
+$green: #96e71d;
+
+.black {
+  color: $green;
+  border: 1px solid $green;
+  background-color: $primary-black;
+  border-radius: 5px;
+  padding: 7px 20px;
+  transition: .4s;
+
+  &:hover {
+    color: $primary-black;
+    background-color: $green;
+    border: 1px solid $primary-black;
+    box-shadow: 0 0 20px 1px $green;
+    transition: .4s;
+  }
+
+  &.green {
+    color: $primary-black;
+    border: 1px solid $green;
+    background-color: $green;
+    padding: 7px 20px;
+
+    &:hover {
+      background-color: #a9ee42;
+      border: 1px solid $primary-black;
+      box-shadow: 0 0 20px 1px $green;
+    }
+  }
+}

@@ -1,10 +1,7 @@
 import {FC} from "react";
 import Button from "../../shared/button/button.tsx";
-// @ts-ignore
 import styles from "./welcome-component.module.scss";
-// @ts-ignore
 import cabin from "../../assets/treetop_cabin.jpg"
-// @ts-ignore
 import men from "../../assets/men.png";
 
 const WelcomeComponent: FC = () => {

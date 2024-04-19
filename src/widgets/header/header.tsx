@@ -1,8 +1,6 @@
 import {FC} from "react";
-// @ts-ignore
 import logo from "../../assets/logo.png";
 import Button from "../../shared/button/button.tsx";
-// @ts-ignore
 import styles from "./header.module.scss";
 
 

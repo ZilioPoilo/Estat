@@ -1,11 +1,11 @@
+@use "../../src/_styles/global/index";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 
 body {
-  font-family: "Quicksand", sans-serif;
+  @include index.SanFont;
   //min-height: 100vh;
   //background: #96e71d;
   //background: linear-gradient(180deg, #96e71d 0%, rgba(255,255,255,1) 18%, rgba(255,255,255,1) 100%);

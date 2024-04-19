@@ -5,6 +5,7 @@ import cabin from "../../assets/treetop_cabin.jpg"
 import men from "../../assets/men.png";
 
 const WelcomeComponent: FC = () => {
+
   return (
     <>
       <div className={styles.container}>
@@ -13,9 +14,10 @@ const WelcomeComponent: FC = () => {
             <p>WELCOME TO YOUR<br></br>FUTURE LUXURY HOME</p>
           </div>
           <div className={styles.sector2}>
-            <p>Step into a world of endless possibilities and explore the epitome of refined living. We take great pride in curating.</p>
+            <p>Step into a world of endless possibilities and explore the epitome of refined living. We take great pride
+              in curating.</p>
             <div className={styles.lowerSector}>
-              <Button color={"green"} className="mr-5" >
+              <Button color={"green"} className="mr-5">
                 Discover now
               </Button>
               <p>Learn more</p>

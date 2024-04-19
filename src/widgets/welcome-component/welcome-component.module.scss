@@ -70,15 +70,30 @@
   margin-top: 40px;
   max-width: 950px;
 }
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 50px -5px rgba(150, 231, 29, 0);
+  }
+  40% {
+    box-shadow: 0 0 50px -5px rgba(150, 231, 29, 100);
+  }
+  100% {
+    box-shadow: 0 0 50px -5px rgba(150, 231, 29, 0);
+  }
+}
+
 .cabin {
   border-radius: 15px;
+  animation: pulse 5s infinite;
 }
+
 
 .men {
   position: absolute;
   bottom: 20px;
   left: -15%;
   height: 250px;
-  border: 1px solid antiquewhite;
+  border: 1px solid style.$white;
   border-radius: 15px;
 }

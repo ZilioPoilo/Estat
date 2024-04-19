@@ -1,0 +1,58 @@
+$primary-black: #1e1f21;
+$green: #96e71d;
+
+.header {
+  position: fixed; /* Фиксированное позиционирование */
+  top: 0; /* Прикрепляем к верху страницы */
+  left: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 10%;
+  background-color: $primary-black;
+  font-size: 20px;
+
+  img {
+    height: 50px;
+  }
+
+  >button {
+    color: $green;
+    border: 1px solid $green;
+    border-radius: 5px;
+    width: 150px;
+    padding: 7px;
+    transition: .4s;
+
+     &:hover {
+       color: $primary-black;
+       background-color: $green;
+       border: 1px solid $primary-black;
+       box-shadow: 0 0 20px 1px $green;
+       transition: .4s;
+     }
+  }
+}
+
+.navigate {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 10px;
+  width: 35%;
+
+  button {
+    background-color: $primary-black;
+    border-bottom: 1px inset transparent;
+    color: white;
+    min-width: 100px;
+    transition: .4s;
+
+    &:hover {
+      border-bottom: 1px inset $green;
+      transition: .2s;
+    }
+  }
+}

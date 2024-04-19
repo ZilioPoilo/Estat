@@ -1,0 +1,10 @@
+
+@mixin LatoFont {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 48px;
+}
+
+@mixin SanFont {
+  font-family: "Quicksand", sans-serif;
+}

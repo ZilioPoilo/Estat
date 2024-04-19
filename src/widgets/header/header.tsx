@@ -1,5 +1,8 @@
 import {FC} from "react";
+// @ts-ignore
 import logo from "../../assets/logo.png";
+import Button from "../../shared/button/button.tsx";
+// @ts-ignore
 import styles from "./header.module.scss";
 
 
@@ -14,7 +17,7 @@ const Header: FC = () => {
           <button>Features</button>
           <button>Apartments</button>
         </div>
-        <button>Contact us</button>
+        <Button color="black" >Contact us</Button>
       </header>
     </>
   );

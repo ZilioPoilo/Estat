@@ -1,27 +1,46 @@
 import {FC} from "react";
+import Button from "../../shared/button/button.tsx";
+// @ts-ignore
 import styles from "./welcome-component.module.scss";
+// @ts-ignore
+import cabin from "../../assets/treetop_cabin.jpg"
+// @ts-ignore
+import men from "../../assets/men.png";
 
 const WelcomeComponent: FC = () => {
   return (
     <>
       <div className={styles.container}>
-        <div className="mt-20 mt flex flex-row justify-between items-center w-full">
+        <div className={styles.headdiv}>
           <div className={styles.sector1}>
             <p>WELCOME TO YOUR<br></br>FUTURE LUXURY HOME</p>
           </div>
           <div className={styles.sector2}>
             <p>Step into a world of endless possibilities and explore the epitome of refined living. We take great pride in curating.</p>
             <div className={styles.lowerSector}>
-              <button>
+              <Button color={"green"} className="mr-5" >
                 Discover now
-              </button>
+              </Button>
               <p>Learn more</p>
             </div>
           </div>
         </div>
 
-        <div className={styles.pictures}>
-
+        <div className={styles.infoPictures}>
+          <div className={styles.infos}>
+            <div>
+              <h1>200+</h1>
+              <p>Property Ready</p>
+            </div>
+            <div>
+              <h1>10K+</h1>
+              <p>Happy Customer</p>
+            </div>
+          </div>
+          <div className={styles.pictures}>
+            <img className={styles.cabin} src={cabin} alt="treetop cabin"/>
+            <img className={styles.men} src={men} alt="men"/>
+          </div>
         </div>
 
       </div>

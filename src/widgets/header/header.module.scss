@@ -1,9 +1,8 @@
-$primary-black: #1e1f21;
-$green: #96e71d;
+@use "../../_styles/global/index" as style;
 
 .header {
-  position: fixed; /* Фиксированное позиционирование */
-  top: 0; /* Прикрепляем к верху страницы */
+  position: fixed;
+  top: 0;
   left: 0;
   width: 100vw;
   display: flex;
@@ -11,29 +10,13 @@ $green: #96e71d;
   justify-content: space-around;
   align-items: center;
   height: 10%;
-  background-color: $primary-black;
+  background-color: style.$primary-black;
   font-size: 20px;
 
   img {
     height: 50px;
   }
 
-  >button {
-    color: $green;
-    border: 1px solid $green;
-    border-radius: 5px;
-    width: 150px;
-    padding: 7px;
-    transition: .4s;
-
-     &:hover {
-       color: $primary-black;
-       background-color: $green;
-       border: 1px solid $primary-black;
-       box-shadow: 0 0 20px 1px $green;
-       transition: .4s;
-     }
-  }
 }
 
 .navigate {
@@ -41,17 +24,18 @@ $green: #96e71d;
   flex-direction: row;
   justify-content: space-around;
   margin-left: 10px;
-  width: 35%;
-
+  width: 40%;
   button {
-    background-color: $primary-black;
+    background-color: style.$primary-black;
+    border: none;
     border-bottom: 1px inset transparent;
+    padding-inline: 5px;
     color: white;
     min-width: 100px;
     transition: .4s;
 
     &:hover {
-      border-bottom: 1px inset $green;
+      border-bottom: 1px inset style.$green;
       transition: .2s;
     }
   }

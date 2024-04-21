@@ -5,9 +5,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 100px;
   padding: 80px 0;
   background-color: style.$primary-black;
+  height: 100vh;
 }
 
 .caption {
@@ -31,23 +31,19 @@
 }
 
 @keyframes introducing {
-  0% {
-    background-color: linear-gradient(90deg, style.$primary-black 0%, style.$secondary-black 100%);
-  }
-  50%{
-    background: linear-gradient(90deg, style.$secondary-black 0%, style.$secondary-black 100%);
-  }
-  100% {
-    background: linear-gradient(90deg, style.$primary-black 0%, style.$secondary-black 100%);
-  }
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 .reason {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 20%;
+  background: style.$secondary-black;
   background: linear-gradient(90deg, style.$primary-black 0%, style.$secondary-black 100%);
   border: 1px solid style.$secondary-black;
   border-radius: 15px;
@@ -55,17 +51,19 @@
   text-align: center;
   color: style.$secondary-gray;
 
+  & > * {
+    z-index: 100;
+  }
+
   h1 {
     margin-bottom: 15px;
     @include style.LatoFont;
     font-size: 20px;
     color: white;
   }
-
-  &:hover {
-    height: 500px;
-  }
 }
+
+
 
 .sign {
   display: flex;

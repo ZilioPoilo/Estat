@@ -8,7 +8,7 @@ const WelcomeComponent: FC = () => {
 
   return (
     <>
-      <div className={styles.container}>
+      <div id={"welcome"} className={styles.container}>
         <div className={styles.headdiv}>
           <div className={styles.sector1}>
             <p>WELCOME TO YOUR<br></br>FUTURE LUXURY HOME</p>

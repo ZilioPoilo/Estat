@@ -10,10 +10,10 @@ const Header: FC = () => {
       <header className={styles.header}>
         <img src={logo} alt="logo"/>
         <div className={styles.navigate}>
-          <button>Welcome</button>
-          <button>Why us</button>
-          <button>Features</button>
-          <button>Apartments</button>
+          <button><a href="#welcome">Welcome</a></button>
+          <button><a href="#why-us">Why us</a></button>
+          <button><a href="#features">Features</a></button>
+          <button><a href="#apartments">Apartments</a></button>
         </div>
         <Button color="black" >Contact us</Button>
       </header>

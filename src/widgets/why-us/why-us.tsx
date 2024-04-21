@@ -4,7 +4,7 @@ import {CiAlignBottom, CiBank, CiMicrochip, CiReceipt} from "react-icons/ci";
 const WhyUs = () => {
   return(
     <>
-      <div className={styles.container}>
+      <div id={"why-us"} className={styles.container}>
         <div className={styles.caption}>
           <h1>
             WHY CHOOSE US
